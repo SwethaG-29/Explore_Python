@@ -2,7 +2,7 @@ import pandas as pd
 from dotenv import load_dotenv
 import os
 from pathlib import Path
-load_dotenv(Path("API_Key.env"))
+load_dotenv(Path("API_Key.env")) #To ensure actual API is not exposed.
 key = os.getenv("API_KEY")
 print(key)
 
@@ -61,3 +61,6 @@ for addr in address:
 # 6. Create a Cache file (no of request gets saved and no need to restry for all records multiple times)
 # 7. function/ normal flow ?
 # 8. In case if there is any network issue or program craches handle the error.
+
+#Note:
+#API are very important, so ensure the security for them is considered.
